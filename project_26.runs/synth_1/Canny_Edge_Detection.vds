@@ -1,0 +1,528 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec  6 00:11:42 2022
+# Process ID: 1200
+# Current directory: C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.runs/synth_1
+# Command line: vivado.exe -log Canny_Edge_Detection.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Canny_Edge_Detection.tcl
+# Log file: C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.runs/synth_1/Canny_Edge_Detection.vds
+# Journal file: C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.runs/synth_1\vivado.jou
+# Running On: yw, OS: Windows, CPU Frequency: 3504 MHz, CPU Physical cores: 4, Host memory: 8527 MB
+#-----------------------------------------------------------
+source Canny_Edge_Detection.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/utils_1/imports/synth_1/Sobel_filter.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/utils_1/imports/synth_1/Sobel_filter.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Canny_Edge_Detection -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2304
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1632.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Canny_Edge_Detection' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Canny_Edge_Detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gaussian' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/gaussian.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/gaussian.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Line_buffer' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Line_buffer' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sobel_Direction' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Sobel_Direction.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel_Direction' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Sobel_Direction.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Line_buffer1' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Line_buffer1' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Line_buffer_2d' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Line_buffer_2d' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:23]
+INFO: [Synth 8-6157] synthesizing module 'NMS' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/NMS.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/NMS.v:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/NMS.v:73]
+WARNING: [Synth 8-567] referenced signal 'Pointer' should be on the sensitivity list [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/NMS.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'NMS' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/NMS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Line_buffer2' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Line_buffer2' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Thresholding.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Thresholding.v:53]
+WARNING: [Synth 8-567] referenced signal 'wire_11' should be on the sensitivity list [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Thresholding.v:48]
+WARNING: [Synth 8-567] referenced signal 'wire_12' should be on the sensitivity list [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Thresholding.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Thresholding.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Canny_Edge_Detection' (0#1) [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Canny_Edge_Detection.v:23]
+WARNING: [Synth 8-7137] Register line_buffer_reg[0] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[1] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[2] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[3] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[4] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[5] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[6] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[7] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[8] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[9] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[10] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[11] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[12] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[13] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[14] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[15] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[16] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[17] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[18] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[19] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[20] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[21] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[22] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[23] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[24] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[25] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[26] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[27] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[28] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[29] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[30] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[31] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[32] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[33] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[34] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[35] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[36] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[37] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[38] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[39] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[40] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[41] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[42] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[43] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[44] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[45] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[46] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[47] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[48] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[49] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[50] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[51] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[52] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[53] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[54] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[55] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[56] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[57] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[58] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[59] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[60] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[61] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[62] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[63] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[64] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[65] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[66] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[67] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[68] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[69] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[70] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[71] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[72] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[73] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[74] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[75] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[76] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[77] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[78] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[79] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[80] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[81] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[82] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[83] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[84] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[85] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[86] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[87] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[88] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[89] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[90] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[91] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[92] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[93] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[94] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[95] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[96] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[97] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[98] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+WARNING: [Synth 8-7137] Register line_buffer_reg[99] in module Line_buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v:44]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[518] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[519] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[520] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[521] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[522] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[523] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[524] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[525] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[526] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[527] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[528] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[529] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[530] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[531] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[532] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[533] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[534] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[535] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[536] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[537] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[538] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[539] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[540] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[541] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[542] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[543] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[544] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[545] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[546] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[547] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[548] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[549] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[550] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[551] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[552] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[553] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[554] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[555] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[556] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[557] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[558] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[559] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[560] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[561] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[562] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[563] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[564] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[565] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[566] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[567] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[568] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[569] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[570] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[571] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[572] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[573] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[574] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[575] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[576] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[577] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[578] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[579] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[580] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[581] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[582] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[583] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[584] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[585] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[586] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[587] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[588] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[589] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[590] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[591] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[592] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[593] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[594] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[595] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[596] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[597] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[598] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[599] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[600] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[601] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[602] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[603] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[604] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[605] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[606] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[607] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[608] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[609] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[610] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[611] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[612] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[613] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[614] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[615] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[616] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_reg[617] was removed.  [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v:43]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net count in module/entity Canny_Edge_Detection does not have driver. [C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.srcs/sources_1/new/Canny_Edge_Detection.v:40]
+WARNING: [Synth 8-7129] Port Pointer[10] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[9] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[8] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[7] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[6] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[5] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[4] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[3] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[2] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[1] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[0] in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start3 in module Thresholding is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[10] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[9] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[8] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[7] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[6] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[5] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[4] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[3] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[2] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[1] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[0] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[10] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[9] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[8] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[7] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[6] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[5] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[4] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[3] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[2] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[1] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count[0] in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start2 in module NMS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start2 in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[7] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[6] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[5] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[4] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[3] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[2] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[1] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P4[0] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[10] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[9] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[8] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[7] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[6] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[5] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[4] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[3] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[2] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[1] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pointer[0] in module Sobel_Direction is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start1 in module gaussian is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 9     
+	   3 Input   11 Bit       Adders := 3     
+	   6 Input   11 Bit       Adders := 2     
+	   5 Input   11 Bit       Adders := 1     
+	   4 Input   11 Bit       Adders := 1     
+	   4 Input   10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 3135  
+	                2 Bit    Registers := 520   
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 14    
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 31    
+	   6 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:28 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:29 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:30 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+-----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+-----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Canny_Edge_Detection | Sobel_LB/line_buffer_reg[517][7]  | 517    | 8     | NO           | NO                 | YES               | 0      | 136     | 
+|Canny_Edge_Detection | Sobel_LB/line_buffer_reg[1035][7] | 518    | 8     | NO           | NO                 | NO                | 0      | 136     | 
+|Canny_Edge_Detection | NMS_LB_2d/line_buffer_reg[517][1] | 517    | 2     | NO           | NO                 | NO                | 0      | 34      | 
+|Canny_Edge_Detection | NMS_LB/line_buffer_reg[517][7]    | 517    | 8     | NO           | NO                 | YES               | 0      | 136     | 
+|Canny_Edge_Detection | NMS_LB/line_buffer_reg[1035][7]   | 518    | 8     | NO           | NO                 | NO                | 0      | 136     | 
+|Canny_Edge_Detection | Thres_LB/line_buffer_reg[517][2]  | 517    | 2     | NO           | NO                 | YES               | 0      | 34      | 
+|Canny_Edge_Detection | Thres_LB/line_buffer_reg[1035][2] | 518    | 2     | NO           | NO                 | NO                | 0      | 34      | 
++---------------------+-----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    54|
+|3     |LUT1    |    13|
+|4     |LUT2    |    66|
+|5     |LUT3    |   133|
+|6     |LUT4    |   135|
+|7     |LUT5    |    74|
+|8     |LUT6    |    81|
+|9     |SRLC32E |   646|
+|10    |FDCE    |    91|
+|11    |FDPE    |    20|
+|12    |FDRE    |   188|
+|13    |LDC     |    20|
+|14    |IBUF    |    91|
+|15    |OBUF    |    34|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                |  1648|
+|2     |  Gauss     |gaussian        |    90|
+|3     |  NMS_LB    |Line_buffer1    |   471|
+|4     |  NMS_LB_2d |Line_buffer_2d  |    79|
+|5     |  SD        |Sobel_Direction |   170|
+|6     |  Sobel_LB  |Line_buffer     |   495|
+|7     |  Thres_LB  |Line_buffer2    |   133|
+|8     |  counter   |Counter         |    80|
+|9     |  nms       |NMS             |     3|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1948.836 ; gain = 316.695
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4248 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:41 . Memory (MB): peak = 1948.836 ; gain = 316.695
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:41 . Memory (MB): peak = 1948.836 ; gain = 316.695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1948.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1948.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  LDC => LDCE: 20 instances
+
+Synth Design complete, checksum: 7f0536d8
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 261 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:47 . Memory (MB): peak = 1948.836 ; gain = 316.695
+INFO: [Common 17-1381] The checkpoint 'C:/Users/D323/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection/Sobel_edge_detection.runs/synth_1/Canny_Edge_Detection.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Canny_Edge_Detection_utilization_synth.rpt -pb Canny_Edge_Detection_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  6 00:13:45 2022...

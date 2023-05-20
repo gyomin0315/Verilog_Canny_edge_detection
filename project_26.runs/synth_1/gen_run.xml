@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1670253080" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Sobel_filter.dcp">
+  <File Type="PA-TCL" Name="Canny_Edge_Detection.tcl"/>
+  <File Type="REPORTS-TCL" Name="Canny_Edge_Detection_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Canny_Edge_Detection.vds"/>
+  <File Type="RDS-UTIL" Name="Canny_Edge_Detection_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Canny_Edge_Detection_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Canny_Edge_Detection.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Counter.v"/>
+        <Attr Name="ImportTime" Val="1670423004"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Line_buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Line_buffer.v"/>
+        <Attr Name="ImportTime" Val="1670387036"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Line_buffer1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Line_buffer1.v"/>
+        <Attr Name="ImportTime" Val="1670387070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Line_buffer2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Line_buffer2.v"/>
+        <Attr Name="ImportTime" Val="1670388282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Line_buffer_2d.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Line_buffer_2d.v"/>
+        <Attr Name="ImportTime" Val="1670252868"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NMS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/NMS.v"/>
+        <Attr Name="ImportTime" Val="1670417196"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sobel_Direction.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Sobel_Direction.v"/>
+        <Attr Name="ImportTime" Val="1670413856"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Thresholding.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Thresholding.v"/>
+        <Attr Name="ImportTime" Val="1670423516"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gaussian.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/gaussian.v"/>
+        <Attr Name="ImportTime" Val="1669732722"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Canny_Edge_Detection.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Canny_Edge_Detection.v"/>
+        <Attr Name="ImportTime" Val="1670254514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Line_buffer_1d.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/sources_1/new/Line_buffer_1d.v"/>
+        <Attr Name="ImportTime" Val="1670250810"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Canny_Edge_Detection"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Sobel_filter.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Sobel_edge_detection.srcs/utils_1/imports/synth_1/Sobel_filter.dcp"/>
+        <Attr Name="ImportTime" Val="1667733600"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
